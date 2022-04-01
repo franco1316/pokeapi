@@ -1,0 +1,65 @@
+:root{
+
+
+
+    /*-----------------------------font-family-----------------------------*/
+
+    --font-family-monserrat: "Monserrat", sans-serif;
+    --font-family-rock: 'RocknRoll One', sans-serif;
+    --font-family-lato: 'Lato',"Helvetica Neue",Arial,Helvetica,sans-serif;
+
+    /*-----------------------------font-family-----------------------------*/
+
+
+
+    /*-----------------------------font-size-----------------------------*/
+
+    --font-size-login-title: 2rem;
+    --font-size-login-text: 1.3rem;
+
+    /*-----------------------------font-size-----------------------------*/
+
+
+
+    /*-----------------------------font-weight-----------------------------*/
+
+    --font-weight-login-title: 800;
+    --font-weight-login-text: 500;
+
+    /*-----------------------------font-weight-----------------------------*/
+
+
+
+     /*-----------------------------background-color-----------------------------*/
+
+     --bg-color-white: #FFF;
+     --bg-color-login: #FDFDFD;
+     --bg-color-login-pokeball:#CCE2FF;
+     --bg-color-pokemon-info: #FFEB3B;
+
+     /*-----------------------------background-color-----------------------------*/
+
+
+
+    /*-----------------------------colors-----------------------------*/
+
+    --color-black: rgba(0,0,0,.87);
+    --color-white: #FFF;
+
+    /*-----------------------------colors-----------------------------*/
+
+
+
+
+
+    /*----------------------------------box-shadow----------------------------------*/
+
+    --box-shadow: ;
+
+    /*----------------------------------box-shadow----------------------------------*/
+
+
+
+    
+
+}

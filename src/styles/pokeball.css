@@ -1,0 +1,85 @@
+.pokeball{
+    background-color: var(--bg-color-login);
+    filter: brightness(0.93);
+    position: relative;
+    width: 400px;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    animation: 5s infinite linear spin ;
+  }
+  
+  .pokeball-line{
+    background-color: rgb(85, 85, 85);
+    width: 400px;
+    height: 25px;
+    border: 1px solid black;
+    z-index: 0;
+  }
+  
+  .pokeball-dark-circle{
+    background-color: rgb(85, 85, 85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    border: 1px solid black;
+    z-index: 0;
+  }
+  
+  .pokeball-dark-circle::before{
+    content: '';
+    background-color: transparent;
+    border: rgba(83, 83, 83, 0.327);
+    border: 1px double lightblue;
+    position: absolute;
+    width: 16%;
+    height: 23%;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .pokeball-dark-circle::after{
+    content: '';
+    background-color: rgba(140, 140, 140, 0.327);
+    filter: brightness(1.8);
+    border: rgba(83, 83, 83, 0.327);
+    border: 3px double lightgray;
+    position: absolute;
+    width: 16%;
+    height: 23%;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .pokeball-light-circle{
+    background-color: white;
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    z-index: 0;
+  }
+  
+  .pokeball-red{
+    position: fixed;
+    width: 400px;
+    height: 50%;
+    top: -12px;
+    border-radius: 400px 400px 0 0;
+    background-color: red;
+    opacity: 0.6;
+  }
+
+  @keyframes spin {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
