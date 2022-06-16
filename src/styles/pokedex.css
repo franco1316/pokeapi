@@ -196,6 +196,9 @@ ul.card{
 .pokedex .button-pages{
     height: auto;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .pokedex .button-pages:hover{
