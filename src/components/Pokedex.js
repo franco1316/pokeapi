@@ -101,7 +101,7 @@ const Pokedex = () => {
                         type = "text"
                         onChange = {e => setSearch(e.target.value)}
                         value = {search}
-                        className = 'search-submit'
+                        className = {`search-submit ${!show?"show":"hide"}`}
                      />
                      <button className = 'button-search-submit'></button>
 

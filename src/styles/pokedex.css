@@ -1,13 +1,12 @@
 .pokedex{
     position: relative;
-    padding: 15px;
+    padding: 0 15px;
     z-index: 0;
 }
 
 .pokedex .title,
 .pokedex .hello-trainer{
     text-align: start;
-    width: 75%;
 }
 
 .pokedex .title:hover,
@@ -27,7 +26,7 @@
 }
 
 .pokedex .hello-trainer{
-    padding: 10px 0 40px 1px;
+    padding: 10px 0 40px 20px;
     text-align: left;
     font-size: 1.1rem;
     font-family: "Montserrat",sans-serif;
@@ -102,6 +101,22 @@
     transition: 0.8s all linear;
 }
 
+.pokedex .search-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    margin: auto;
+}
+
+.pokedex .select-container{
+    width: 100%;
+    padding: auto;
+    margin: auto;
+}
+
+
 .pokedex .search-submit{
     width: 100%;
     max-width: 400px;
@@ -145,16 +160,18 @@
     position: relative;
     z-index: -1;
     display: hidden;
+    opacity: 0;
 }
 
 .pokedex .show{
     position: relative;
     z-index: 1;
+    opacity: 1;
 }
 
 .pokedex .card{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
     gap: 1rem;
 }
 
@@ -165,9 +182,9 @@ ul.card{
 
 .pokedex .container-pages{
     display: grid;
-    grid-template-columns: repeat(11, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(1.3rem, 1fr));
     gap: 1rem;
-    width: 45%;
+    width: 33%;
     margin: 100px auto;
 }
 
@@ -177,7 +194,7 @@ ul.card{
 }
 
 .pokedex .button-pages{
-    height: 3vw;
+    height: auto;
     border-radius: 50%;
 }
 

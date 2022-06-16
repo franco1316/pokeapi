@@ -1,7 +1,7 @@
 .container-pokeball{
   width: 15vw;
   height: 15vw;
-  position: absolute;
+  position: fixed;
   right: 8vw;
   top: 2vw;
 }
