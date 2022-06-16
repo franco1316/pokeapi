@@ -7,16 +7,16 @@ import send from '../Assets/paper-plane-solid.svg'
 const Login = () => {
 
     const [trainerName, setTrainerName] = useState("");
-    const dispatch=useDispatch()
+    const dispatch = useDispatch()
 
-    const emptyInputs=()=>{
+    const emptyInputs = () => {
         setTrainerName("")
     }       
 
     const navigate = useNavigate()
 
 
-    const submit=(e)=>{
+    const submit = ( e ) => {
         e.preventDefault();
         dispatch({
             type: "GET_TRAINERNAME",
@@ -48,7 +48,7 @@ const Login = () => {
                     <input
                         id='name'
                         type="text"
-                        onChange={e=>setTrainerName(e.target.value)}
+                        onChange={e => setTrainerName(e.target.value)}
                         value={trainerName}
                         required
                         className='login-input'
@@ -57,9 +57,7 @@ const Login = () => {
                         <img src={send} alt="Send" className='login-submit-icon' />
                         <button className='login-submit-button'></button>
                     </div>
-            
                 </div>
-            
             </form>
         </div>
     );

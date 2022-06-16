@@ -1,8 +1,16 @@
+.container-pokeball{
+  width: 15vw;
+  height: 15vw;
+  position: absolute;
+  right: 8vw;
+  top: 2vw;
+}
+
 .pokeball{
     background-color: var(--bg-color-login);
     filter: brightness(0.93);
     position: relative;
-    width: 400px;
+    width: 100%;
     height: 100%;
     border-radius: 50%;
     display: flex;
@@ -14,8 +22,8 @@
   
   .pokeball-line{
     background-color: rgb(85, 85, 85);
-    width: 400px;
-    height: 25px;
+    width: 100%;
+    height: 5%;
     border: 1px solid black;
     z-index: 0;
   }
@@ -67,9 +75,9 @@
   
   .pokeball-red{
     position: fixed;
-    width: 400px;
+    width: 100%;
     height: 50%;
-    top: -12px;
+    top: 1%;
     border-radius: 400px 400px 0 0;
     background-color: red;
     opacity: 0.6;

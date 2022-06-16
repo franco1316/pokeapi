@@ -15,29 +15,10 @@ function App() {
       <div className="App">
       <Pokeball/>
         <Routes>
-          <Route 
-            path='/' 
-            element={
-              <Login 
-              />
-            }
-          />
-          <Route 
-            element={<ProtectedRoutes/>}>
-              <Route
-                path='/pokedex'
-                element={
-                  <Pokedex
-                  />
-                }
-              />
-              <Route
-                path='/pokedex/:id'
-                element={
-                  <PokemonInfo
-                  />
-                }
-              />
+          <Route path='/' element={ <Login/> } />
+          <Route element={<ProtectedRoutes/>}>
+              <Route path='/pokedex' element={ <Pokedex/> } />
+              <Route path='/pokedex/:id' element={ <PokemonInfo/> } />
           </Route>
         </Routes>
       </div>

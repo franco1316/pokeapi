@@ -1,6 +1,6 @@
 .login-bg{
     background-color: var(--bg-color-login);
-    padding: 0 57.6px;
+    padding: 10%;
 }
 
 .login-hello{
@@ -26,6 +26,7 @@
 
 
 .login-container-img-trainer{
+    min-width: 120px;
     width: 120px;
     height: 251.34px;
 }
@@ -45,11 +46,13 @@
 .login-container-input{
     display: flex;
     justify-content: center;
-
+    width: 90vw;
+    max-width: 500px;
+    margin: auto;
 }
 
 .login-input{
-    width: 350px;
+    width: 100%;
     border: none;
     border-radius: 30px;
     outline: none;
@@ -57,10 +60,9 @@
     color: grey;
     box-shadow: -10px -10px 15px rgb(58 58 58 / 9%), 10px 10px 15px rgb(66 66 66 / 35%);
     transition: .5s;
-    padding: 10px 55px 10px 15px;
+    padding: 10px 15px 10px 15px;
     height: 50px;
     position: relative;
-    left: 25px;
     font-family: sans-serif;
     line-height: 1.15;
 }
@@ -68,11 +70,12 @@
 .login-apperience-submit-button{
 
     max-width: 50px;
+    min-width: 40px;
     background-color: #40FF2F;
     padding: 1px 6px;
     border-radius: 50%;
     position: relative;
-    left: -36px;
+    left: -40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,13 +104,4 @@
 
 .login-submit-button:hover{
     cursor: pointer;
-}
-
-.container-pokeball{
-    position: fixed;
-    width: 99vw;
-    height: 400px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
 }
