@@ -37,7 +37,7 @@ const PokemonInfo = () => {
                 <div className = "container-pokemon-flex-vertical">
                     <section className = "pokemon">
                         <div className = 'container-pokemon-sprite'>
-                            <img src = {pokemon.sprites?.other["official-artwork"].front_default} alt = "pokemon-image"
+                            <img src = {pokemon.sprites?.other["official-artwork"].front_default} alt = ""
                                 className = 'pokemon-sprite'
                             />
                         </div>
