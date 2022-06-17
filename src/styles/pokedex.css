@@ -229,4 +229,5 @@ ul.card{
 .pokedex .font-button-pages{
     color: var(--color-white);
     font: 700 1.1rem sans-serif;
+    padding: 0.2rem;
 }
